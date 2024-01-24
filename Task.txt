@@ -1,0 +1,20 @@
+Step 1: Design the Job Application Form
+
+Define the fields for the job application form: First Name, Last Name, Email ID, Phone Number, College Name, Total Marks on Degree, and Skills.
+
+Step 2: Create a JobApplication Class
+
+Create a Java class named JobApplication.
+Define instance variables for each field in the job application form (e.g., firstName, lastName, email, phoneNumber, collegeName, totalMarks, skills).
+Create a constructor to initialize these variables.
+Create getter and setter methods for each variable to access and modify the data.
+
+Step 3: Input Data from User
+
+Use the Scanner class to read input from the user.
+Prompt the user to enter values for each field in the job application form.
+Create an instance of the JobApplication class and set the values using setter methods.
+
+Step 4: Exception Handling
+
+Implement exception handling to handle potential errors during input. For example, handle NumberFormatException when parsing the total marks.
