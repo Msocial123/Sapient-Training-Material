@@ -1,0 +1,18 @@
+public class SLAService {
+    private static final int RESPONSE_TIME_THRESHOLD = 100; // Example: 100 milliseconds
+
+    public void processRequest() {
+        long startTime = System.currentTimeMillis();
+
+        // Your actual business logic here
+
+        long endTime = System.currentTimeMillis();
+        long responseTime = endTime - startTime;
+
+        // Check if response time exceeds the threshold
+        if (responseTime > RESPONSE_TIME_THRESHOLD) {
+            // Trigger alert or take necessary actions
+            System.out.println("SLA breach: Response time exceeded threshold");
+        }
+    }
+}
