@@ -1,0 +1,37 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function collectInformation() {
+  rl.question('Enter your First Name: ', (firstName) => {
+    rl.question('Enter your Last Name: ', (lastName) => {
+      rl.question('Enter your Email ID: ', (email) => {
+        rl.question('Enter your Phone Number: ', (phoneNumber) => {
+          rl.question('Enter your Username: ', (username) => {
+            rl.question('Enter your Password: ', (password) => {
+              rl.question('Confirm Password: ', (confirmPassword) => {
+                rl.question('Enter your Date of Birth (YYYY-MM-DD): ', (dob) => {
+                  // Here, you can process the collected information as needed.
+                  console.log('\nRegistration Successful! Thank you for providing your information.');
+                  console.log(`Name: ${firstName} ${lastName}`);
+                  console.log(`Email: ${email}`);
+                  console.log(`Phone Number: ${phoneNumber}`);
+                  console.log(`Username: ${username}`);
+                  console.log(`Date of Birth: ${dob}`);
+                  rl.close();
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  });
+}
+
+console.log('Welcome to the Retail Shopping Website - Registration');
+console.log('---------------------------------------------------');
+collectInformation();
