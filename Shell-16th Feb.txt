@@ -1,0 +1,135 @@
+    1  yum update -y
+    2  cd /
+    3  ls
+    4  ls
+    5  cd home
+    6  ls
+    7  useradd Murali
+    8  ls
+    9  cd ../boot
+   10  ls
+   11  cd ../etc
+   12  ls
+   13  vi passwd
+   14  cd ../bin
+   15  ls
+   16  cd /home/ec2-user
+   17  clear
+   18  touch DevOps
+   19  ls
+   20  ls -a
+   21  ls -l
+   22  ls -la
+   23  touch sample.pdf
+   24  touch sample1 sample2 sample3
+   25  ls
+   26  rm -rf *
+   27  ls
+   28  touch sample{1..100}
+   29  ls
+   30  rm -rf *
+   31  ls
+   32  yum install java
+   33  which java
+   34  java --version
+   35  yum install java-1.8.0-amazon-corretto-devel
+   36  clear
+   37  yum install java-1.8.0-openjdk
+   38  java --version
+   39  clear
+   40  java -alternative
+   41  java -alternatives
+   42  java -- alternatives
+   43  java --alternatives
+   44  clear
+   45  sudo alternatives --config java
+   46  java --version
+   47  java -version
+   48  sudo alternatives --config mysql
+   49  ls -la
+   50  ls -a
+   51  clear
+   52  ls -a
+   53  file $(which java)
+   54  file /etc/alternatives/java
+   55  vi .bashrc
+   56  source .bashrc
+   57  echo $JAVA_HOME
+   58  echo $PATH
+   59  yum install mysql -y
+   60  mysql --version
+   61  yum install git -y
+   62  yum install tomcat -y
+   63  yum remove tomcat -y
+   64  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.zip
+   65  ls
+   66  unzip apache-tomcat-9.0.85.zip
+   67  ls
+   68  mv apache-tomcat-9.0.85 tomcat
+   69  ls
+   70  clear
+   71  ls
+   72  cd tomcat
+   73  ls
+   74  ls
+   75  cd bin
+   76  ls
+   77  cd ..
+   78  ls
+   79  ls
+   80  cd conf
+   81  ls
+   82  cd ..
+   83  ls
+   84  cd ..
+   85  ls
+   86  rm -rf  apache-tomcat-9.0.85.zip tomcat
+   87  ls
+   88  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz
+   89  ls
+   90  tar -xvzf apache-tomcat-9.0.85.tar.gz
+   91  ls
+   92  clear
+   93  ls -l
+   94  touch K8s
+   95  ls -l
+   96  mkdir Terraform
+   97  ls -l
+   98  chmod 647 k8s
+   99  chmod 647 K8s
+  100  ls -l
+  101  chmod 007 K8s
+  102  ls -l
+  103  useradd Murali
+  104  useradd Mohan
+  105  passwd Mohan
+  106  ls -l
+  107  chown Mohan K8s
+  108  ls -l
+  109  chgrp Mohan K8s
+  110  ls -l
+  111  chown root:root K8s
+  112  ls -l
+  113  chown Mohan names.txt Git
+  114  ls -l
+  115  chgrp Mohan names.txt
+  116  ls -l
+  117  touch Fahman
+  118  ls
+  119  ls -l
+  120  umask
+  121  history
+  122  Top
+  123  man top
+  124  top
+  125  ps
+  126  ls
+  127  whereis names.txt
+  128  data
+  129  date
+  130  clear
+  131  date bg
+  132  bg
+  133  bg %1
+  134  bg %%
+  135  history

@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Event_Notification",
+    "Statement": [
+        {
+            "Sid": "Example SNS topic policy",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "s3.amazonaws.com"
+            },
+            "Action": [
+                "SNS:Publish"
+            ],
+            "Resource": "arn:aws:sns:ap-south-1:343907054657:Event_Notification",
+            "Condition": {
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:s3:::s3-notification-example"
+                },
+            }
+        }
+    ]
+}                  
